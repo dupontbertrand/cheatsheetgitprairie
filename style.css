@@ -2,7 +2,8 @@ a:link {color: white;}
 
 a:visited {color: white;}
 
-a {text-decoration: none;}
+a {text-decoration: none;
+margin: auto;}
 
 body
 
