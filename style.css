@@ -1,3 +1,83 @@
-.top {
-text-align: center;
+
+
+body
+
+{
+
+  background-image: url("https://rawgithub.com/pastjean/git-cheat-sheet/master/git-cheat-sheet.svg");
+
+  background-attachment: fixed;
+
+  background-size: 100%;
+
+  text-align: center;
+
+}
+
+​
+
+h2
+
+{
+
+  font-family: sans-serif;
+
+  color: black;
+
+  text-align: center;
+
+}
+
+​
+
+li
+
+{
+
+  line-height: 2em;
+
+}
+
+​
+
+h1
+
+{
+
+  color: white;
+
+  font-size: 3em;
+
+}
+
+​
+
+#container
+
+{
+
+  background-color: silver;
+
+  background-size: cover;
+
+
+
+  position: absolute;
+
+  border: solid 0.75em black;
+
+  border-radius: 1.50em;
+
+}
+
+​
+
+#logo{
+
+  position: absolute;
+
+  top: 1em;
+
+  left: 3em;
+
 }

@@ -1,42 +1,142 @@
+
+
 <!DOCTYPE html>
+
 <html>
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css">
-    <title>CheatSheet GIT</title>
-  </head>
-  <body>
-    <div class="top">
-        <h1>GIT + GITHUB</h1>
-        <h2> <a href="#GIT"></a>GIT</h2>
-        <h2> <a href="#GITHUB"></a>GITHUB</h2>
-        <h2><a href="#Recap"></a>Marche à suivre</h2>
-  </div>
 
-<div class="Git">
-  <h3 id="GIT">GIT</h3>
-    <p> git init : Initialiser git dans un nouveau dossier </p>
-    <p> git log + nom du fichier : Permet de voir les changements dans un fichier </p>
-    <p> git diff : Permet de voir la différence entre 2 fichiers </p>
+​
 
-    <p> Lorsque l'on veut push un changement par exemple dans index.html, 3 étapes :
-      git add + nom du fichier
-      git commit -m "Commentaire"
-      git push  </p>
+<head>
 
-<p> Si l'on veut supprimer un fichier :
-    git rm index.html
-    git commit -m "Suppression"
-    git push </p>
+	<title>Cheat sheet GIT</title>
 
-</div>
+	<meta charset="utf-8" />
 
-<div class="Github">
-  <h3 id="GITHUB">GITHUB</h3>
-<p> Lors de la création du repos, laisser le profil en "Public" et la license en "None" </br>
-  Mettre le même nom pour le repos ET le dossier local (<strong> Pour ne pas s'embrouiller </strong>) </p>
+	<link rel="stylesheet" href="style.css" />
 
-</div>
+​
 
-  </body>
+</head>
+
+​
+
+<body>
+
+<header>
+
+	<h1>CheatSheet GIT+GITHUB</h1>
+
+</header>
+
+​
+
+	<h2>GIT</h2>
+
+​
+
+	<ul>
+    <li> git init : Initialiser git dans un nouveau dossier  </li>
+
+    <li> git log + nom du fichier : Permet de voir les changements dans un fichier </li>
+
+		<li>git status : Liste tous les nouveaux fichiers et les fichiers modifiés à commiter</li>
+
+		<li>git diff : Montre les modifications de fichier</li>
+
+		<li>git add : Ajoute un instantané du fichier, en préparation pour le suivi de version</li>
+    </br>
+
+    <li> Lorsque l'on veut push un changement par exemple dans index.html, 3 étapes : </br>
+      git add + nom du fichier</br>
+      git commit -m "Commentaire"</br>
+      git push </li>
+</br>
+		<li>Si l'on veut supprimer un fichier :</br>
+        git rm index.html</br>
+        git commit -m "Suppression"</br>
+        git push</li>
+
+	</ul>
+
+​<h4>Changement au niveau des noms de fichiers :</h4>
+
+​
+
+<ul>
+
+  <li>git rm = Supprime le fichier du répertoire de travail et met a jour l'index.</li>
+
+  <li>git mv = Renomme le fichier et prépare le changement pour un commit.</li>
+
+</ul>
+
+	<h2>GITHUB :</h2>
+
+​
+
+	<ul>
+
+		<li>git branch = Liste toutes les branches locales dans le dépôt courant.</li>
+
+		<li>git branch + nom de la branche = Crée une nouvelle branche.</li>
+
+		<li>git checkout + nom de la branche = Bascule sur la branche </li>
+
+		<li>git branch -d nom de la branche = Supprime la branche spécifiée.</li>
+
+    <li> Lors de la création du repos, laisser le profil en "Public" et la license en "None" </br>
+      Mettre le même nom pour le repos ET le dossier local (<strong> Pour ne pas s'embrouiller </strong>) </li>
+
+	</ul>
+
+
+
+  <h2>Marche à suivre</h2>
+
+  <ol>
+
+    <li>Créer le dossier local et <strong>faire le git init</strong>. </li>
+    <li>touch index.html</li>
+    <li>touch .gitignore</li>
+    <li>git add *</li>
+    <li>git commit -m "First commit" </li>
+       GITHUB
+    <li> New repository </li>
+    <li> <strong>Même nom</strong> que le dossier local </li>
+    <li> Public et no license </li>
+    <li> Copier la ligne "git remote..."</li>
+      TERMINAL
+    <li>Coller la ligne </li>
+    <li>git push -u origin master</li>
+    (A ce moment là, rafraichir la page GITHUB, le index.html et le .gitignore doivent être affichés)
+
+  </ol>
+
+<h5> Si on veut mettre sur GithubPages (en vrac) : </h5>
+
+<ul>
+  <li>atom .</li>
+  <li>Modifier son index.html</li>
+  <li>Sur github :</li>
+    <ol>
+      <li>Au dessus des fichiers cliquer sur master pour créer la branche <strong>gh-pages</strong></li>
+      <li>Settings</li>
+      <li>Branches</li>
+      <li>Changer la default par "gh-pages"</li>
+    </ol>
+    <li>Dans le terminal :</li>
+      <ol>
+        <li>git branch gh-pages</li>
+        <li>git checkout gh-pages</li>
+        <li>git status</li>
+      </ol>
+      <li>Atom ou terminal : Add+Commit+Push</li>
+      <li>Repo/Settings/URL</li>
+  </ul>
+
+
+</body>
+
+​
+
 </html>
