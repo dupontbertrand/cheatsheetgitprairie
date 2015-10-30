@@ -1,11 +1,9 @@
-a:link {
-  
-}
+
 
 a:visited {color: white;}
 
 a {text-decoration: none;
-color: red;}
+color: white;}
 
 .github {
   text-align: center;
