@@ -63,8 +63,8 @@ body {
 
           background-color: silver;
           background-size: auto;
-          margin-left: 15%;
-          margin-right: 15%;
+          margin-left: 0;
+          margin-right: 0;
           padding: 10px;
           border: solid  black;
           border-radius: 45px ;
