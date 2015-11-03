@@ -1,7 +1,16 @@
+body {
+  background-image: url("http://laravelista.com/content/images/2015/01/git.jpg");
+  background-attachment: fixed;
+  background-size: 100%;
+  text-align: justify;
+  color:white;
+  font-size:2em;
+}
+
 header {
 
     background-color: silver;
-    background-size: cover;
+    background-size:  cover;
     margin-left: 15%;
     margin-right: 15%;
     padding: 10px;
@@ -13,7 +22,7 @@ header {
 a:visited {color: white;}
 
 a {
-  text-decoration: none;
+  text-decoration: underline;
   color: white; }
 
 .github {
@@ -22,14 +31,11 @@ a {
   margin-right: 50px;
 }
 
-body {
-  background-image: url("http://laravelista.com/content/images/2015/01/git.jpg");
-  background-attachment: fixed;
-  background-size: 100%;
-  text-align: center;
-  color:white;
-  font-size:2em;
-}
+
+​h1 {
+  color: white;
+  font-size: 3em;
+    }
 
 ​h2 {
   font-family: sans-serif;
@@ -41,10 +47,6 @@ body {
   line-height: 2em;
   }
 
-​h1 {
-  color: white;
-  font-size: 3em;
-    }
 
 
 /*Mobile-friendly*/
@@ -52,23 +54,27 @@ body {
 
     @media (max-width: 1024px) {
 
-      /*header {
+      body {
+        background-image: url("http://laravelista.com/content/images/2015/01/git.jpg");
+        background-attachment: fixed;
+        background-size: 100%;
+        text-align: left;
+        color:white;
+        font-size:1em;
+        line-height:22px;
+      }
 
-          background-color: silver;
-          background-size: cover;
-          margin-left: 15%;
-          margin-right: 15%;
-          padding: 10px;
-          border: solid  black;
-          border-radius: 45px ;
-          border-width: 5px;
-      }*/
+      header {
+        display: none;
+        text-align: center;
+      }
 
       a:visited {color: white;}
 
       a {
-        text-decoration: none;
-        color: white; }
+        text-decoration: underline;
+        color: white;
+        font-size: 0.8em;}
 
       .github {
         text-align: center;
@@ -76,14 +82,11 @@ body {
         margin-right: 50px;
       }
 
-      body {
-        background-image: url("http://laravelista.com/content/images/2015/01/git.jpg");
-        background-attachment: fixed;
-        background-size: 100%;
-        text-align: center;
-        color:white;
-        font-size:2em;
-      }
+
+      ​h1 {
+        color: white;
+        font-size: 1em;
+          }
 
       ​h2 {
         font-family: sans-serif;
@@ -95,10 +98,6 @@ body {
         line-height: 2em;
         }
 
-      ​h1 {
-        color: white;
-        font-size: 1em;
-          }
 
 
     }
