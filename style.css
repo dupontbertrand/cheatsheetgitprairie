@@ -62,7 +62,7 @@ body {
       header {
 
           background-color: silver;
-          background-size: cover;
+          background-size: auto;
           margin-left: 15%;
           margin-right: 15%;
           padding: 10px;
