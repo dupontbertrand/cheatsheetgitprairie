@@ -57,14 +57,14 @@ body {
 /*Mobile-friendly*/
 
 
-    @media (max-width: 1024px) {
+    @media (max-width: 700px) {
 
       header {
 
           background-color: silver;
-          background-size: auto;
-          margin-left: 0;
-          margin-right: 0;
+          background-size: cover;
+          margin-left: 15%;
+          margin-right: 15%;
           padding: 10px;
           border: solid  black;
           border-radius: 45px ;
@@ -104,7 +104,7 @@ body {
 
       ​h1 {
         color: white;
-        font-size: 3em;
+        font-size: 1em;
           }
 
         #container {
