@@ -57,9 +57,9 @@ body {
 /*Mobile-friendly*/
 
 
-    /*@media (max-width: 1024px) {
+    @media (max-width: 1024px) {
 
-      header {
+      /*header {
 
           background-color: silver;
           background-size: cover;
@@ -69,7 +69,7 @@ body {
           border: solid  black;
           border-radius: 45px ;
           border-width: 5px;
-      }
+      }*/
 
       a:visited {color: white;}
 
@@ -115,4 +115,4 @@ body {
         border-radius: 1.50em;
           }
 
-    }*/
+    }
