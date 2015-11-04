@@ -7,6 +7,25 @@ body {
   font-size:2em;
 }
 
+#article1 {
+  border: solid white 1px;
+  border-radius: 10%;
+  margin-top: 2em;
+}
+
+#article2 {
+  border: solid white 1px;
+  /*border-radius: 10%;*/
+  margin-top: 2em;
+  padding-top: 1em;
+}
+
+#article3 {
+  border: solid white 1px;
+  border-radius: 10%;
+  margin-top: 2em;
+}
+
 header {
 
     background-color: silver;
