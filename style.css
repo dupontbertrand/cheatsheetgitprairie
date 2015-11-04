@@ -2,7 +2,7 @@ body {
   background-image: url("http://laravelista.com/content/images/2015/01/git.jpg");
   background-attachment: fixed;
   background-size: 100%;
-  text-align: justify;
+  text-align: center;
   color:white;
   font-size:2em;
 }
