@@ -2,145 +2,141 @@
 
 <html>
 
-​
-
 <head>
-
 	<title>Cheat sheet GIT</title>
-
-	<meta charset="utf-8" lang="fr"/>
-
+	<meta charset="utf-8" lang="fr" />
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=yes" />
 	<link rel="stylesheet" href="style.css" />
-<link rel="icon" href="favicon.ico" /> 
-​	<meta name="viewport" content="initial-scale=1.0, user-scalable=yes" />
-
+	<link rel="icon" href="favicon.ico" /> ​
 </head>
 
 ​
 
 <body>
+	<header>
+		<h1>CheatSheet GIT + GITHUB</h1>
+		<img src="http://blog.joeybronner.fr/wp-content/uploads/2013/11/GitHub.png" alt="Logo git		" />
+	</header>
 
-<header>
+	​<a href="#GIT">GIT</a>
+	<a href="#GITHUB" class="github">GITHUB</a>
+	<a href="#marcheasuivre">Depot+Repo</a>
 
-	<h1>CheatSheet GIT + GITHUB</h1>
-	<img src="http://blog.joeybronner.fr/wp-content/uploads/2013/11/GitHub.png" alt="Logo git		" />
+	<section>
+		<article id="article1">
+			<h2 id="GIT">GIT</h2>
 
-</header>
+			​
 
-​<a href="#GIT">GIT</a>
-<a href="#GITHUB" class="github">GITHUB</a>
-<a href="#marcheasuivre">Depot+Repo</a>
+			<ul>
+				<li> git init : Initialiser git dans un nouveau dossier </li>
 
-<section>
-	<article id="article1">
-	<h2 id="GIT">GIT</h2>
+				<li> git log + nom du fichier : Permet de voir les changements dans un fichier </li>
 
-​
+				<li>git status : Liste tous les nouveaux fichiers et les fichiers modifiés à commiter</li>
 
-	<ul>
-    <li> git init : Initialiser git dans un nouveau dossier  </li>
+				<li>git diff : Montre les modifications de fichier</li>
 
-    <li> git log + nom du fichier : Permet de voir les changements dans un fichier </li>
+				<li>git add : Ajoute un instantané du fichier, en préparation pour le suivi de version</li>
+			</ul>
 
-		<li>git status : Liste tous les nouveaux fichiers et les fichiers modifiés à commiter</li>
-
-		<li>git diff : Montre les modifications de fichier</li>
-
-		<li>git add : Ajoute un instantané du fichier, en préparation pour le suivi de version</li>
-    </br>
-
-    <li> Lorsque l'on veut push un changement par exemple dans index.html, 3 étapes : </br>
-      git add + nom du fichier</br>
-      git commit -m "Commentaire"</br>
-      git push </li>
-</br>
-		<li>Si l'on veut supprimer un fichier :</br>
-        git rm index.html</br>
-        git commit -m "Suppression"</br>
-        git push</li>
-
-	</ul>
-
-​<h4>Changement au niveau des noms de fichiers :</h4>
-
-​
-
-<ul>
-
-  <li>git rm = Supprime le fichier du répertoire de travail et met a jour l'index.</li>
-
-  <li>git mv = Renomme le fichier et prépare le changement pour un commit.</li>
+				<ul>
+				<ul><li>	<li> Lorsque l'on veut push un changement par exemple dans index.html, 3 étapes : </li></li>
+					<li>git add + nom du fichier</li>
+					<li>git commit -m "Commentaire"</li>
+					<li>git push </li>
+				</ul>
+			<ul><li><li>Si l'on veut supprimer un fichier :</li></li>
+				<li>	git rm index.html</li>
+				<li>	git commit -m "Suppression"</li>
+				<li>	git push</li>
 
 </ul>
-</article>
-<article id="article2">
-	<h2 id="GITHUB">GITHUB</h2>
+			</ul>
 
-​
+			​
+			<h4>Changement au niveau des noms de fichiers :</h4>
 
-	<ul>
+			​
 
-		<li>git branch = Liste toutes les branches locales dans le dépôt courant.</li>
+			<ul>
 
-		<li>git branch + nom de la branche = Crée une nouvelle branche.</li>
+				<li>git rm = Supprime le fichier du répertoire de travail et met a jour l'index.</li>
 
-		<li>git checkout + nom de la branche = Bascule sur la branche </li>
+				<li>git mv = Renomme le fichier et prépare le changement pour un commit.</li>
 
-		<li>git branch -d nom de la branche = Supprime la branche spécifiée.</li>
+			</ul>
+		</article>
+		<article id="article2">
+			<h2 id="GITHUB">GITHUB</h2>
 
-    <li> Lors de la création du repos, laisser le profil en "Public" et la license en "None" </br>
-      Mettre le même nom pour le repos ET le dossier local (<strong> Pour ne pas s'embrouiller </strong>) </li>
+			​
 
-	</ul>
-</article>
+			<ul>
 
-<article id="article3">
-  <h2 id="marcheasuivre">Marche à suivre :</h2>
+				<li>git branch = Liste toutes les branches locales dans le dépôt courant.</li>
 
-  <ol>
+				<li>git branch + nom de la branche = Crée une nouvelle branche.</li>
 
-    <li>Créer le dossier local et <strong>faire le git init</strong>. </li>
-    <li>touch index.html</li>
-    <li>touch .gitignore</li>
-    <li>git add *</li>
-    <li>git commit -m "First commit" </li>
-       GITHUB
-    <li> New repository </li>
-    <li> <strong>Même nom</strong> que le dossier local </li>
-    <li> Public et no license </li>
-    <li> Copier la ligne "git remote..."</li>
-      TERMINAL
-    <li>Coller la ligne </li>
-    <li>git push -u origin master</li>
-    (A ce moment là, rafraichir la page GITHUB, le index.html et le .gitignore doivent être affichés)
+				<li>git checkout + nom de la branche = Bascule sur la branche </li>
 
-  </ol>
+				<li>git branch -d nom de la branche = Supprime la branche spécifiée.</li>
 
-<h5> Si on veut mettre sur GithubPages (en vrac) : </h5>
+				<li> Lors de la création du repos, laisser le profil en "Public" et la license en "None" </br>
+					Mettre le même nom pour le repos ET le dossier local (
+					<strong> Pour ne pas s'embrouiller </strong>) </li>
 
-<ul>
-  <li>atom .</li>
-  <li>Modifier son index.html</li>
-  <li>Sur github :</li>
-    <ol>
-      <li>Au dessus des fichiers cliquer sur master pour créer la branche <strong>gh-pages</strong></li>
-      <li>Settings</li>
-      <li>Branches</li>
-      <li>Changer la default par "gh-pages"</li>
-    </ol>
-    <li>Dans le terminal :</li>
-      <ol>
-        <li>git branch gh-pages</li>
-        <li>git checkout gh-pages</li>
-        <li>git status</li>
-      </ol>
-      <li>Atom ou terminal : Add+Commit+Push</li>
-      <li>Repo/Settings/URL</li>
-  </ul>
-</article>
-</section>
+			</ul>
+		</article>
+
+		<article id="article3">
+			<h2 id="marcheasuivre">Marche à suivre :</h2>
+
+			<ol>
+
+				<li>Créer le dossier local et
+					<strong>faire le git init</strong>. </li>
+				<li>touch index.html</li>
+				<li>touch .gitignore</li>
+				<li>git add *</li>
+				<li>git commit -m "First commit" </li>
+				<p>GITHUB</p>
+				<li> New repository </li>
+				<li>
+					<strong>Même nom</strong> que le dossier local </li>
+				<li> Public et no license </li>
+				<li> Copier la ligne "git remote..."</li>
+				<p>TERMINAL</p>
+				<li>Coller la ligne </li>
+				<li>git push -u origin master</li>
+				(A ce moment là, rafraichir la page GITHUB, le index.html et le .gitignore doivent être affichés)
+
+			</ol>
+
+			<h5> Si on veut mettre sur GithubPages (en vrac) : </h5>
+
+			<ul>
+				<li>atom .</li>
+				<li>Modifier son index.html</li>
+				<li>Sur github :</li>
+				<ol>
+					<li>Au dessus des fichiers cliquer sur master pour créer la branche
+						<strong>gh-pages</strong>
+					</li>
+					<li>Settings</li>
+					<li>Branches</li>
+					<li>Changer la default par "gh-pages"</li>
+				</ol>
+				<li>Dans le terminal :</li>
+				<ol>
+					<li>git branch gh-pages</li>
+					<li>git checkout gh-pages</li>
+					<li>git status</li>
+				</ol>
+				<li>Atom ou terminal : Add+Commit+Push</li>
+				<li>Repo/Settings/URL</li>
+			</ul>
+		</article>
+	</section>
 </body>
-
-​
-
 </html>
